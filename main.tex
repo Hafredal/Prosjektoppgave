@@ -9,7 +9,8 @@
 \usepackage{adjustbox}
 \usetikzlibrary{shapes,snakes}
 \usepackage{amsmath,amssymb}
-\usepackage{appendix}
+\usepackage{sidecap}
+%\usepackage{appendix}
 
 
 \title{Awareness Communication and \newlinetitle Distribution Service for
@@ -20,12 +21,12 @@ Hospitals} % The title of your assignement; NB use \newlinetitle to start a newl
 \date{Desember 2013}
 
 %% Uncomment the following in case you want subfigures; note that there will be a warning for the caption package
-% \let\subcaption\undefined
-% \let\subfloat\undefined
-% \usepackage[bf]{caption}
-% \usepackage{subcaption}
+ \let\subcaption\undefined
+ \let\subfloat\undefined
+ \usepackage[bf]{caption}
+ \usepackage{subcaption}
 
-\DeclareGraphicsExtensions{.pdf,.jpg}
+\DeclareGraphicsExtensions{.pdf,.jpg,.png}
 \graphicspath{{./figs/}}
 
 
@@ -111,10 +112,11 @@ Hospitals} % The title of your assignement; NB use \newlinetitle to start a newl
 \include{hensikt}
 \include{prosess}
 
-\begin{appendices}
-\appendixpage
-\include{appendix_workshop}
-\end{appendices}
+%\begin{appendices}
+%\appendixpage
+%\include{appendix_workshop}
+%\end{appendices}
+
 
 %% include here the other chapters
 
@@ -324,14 +326,15 @@ J Am Med Inform Assos 2008 15: 114-119
 \end{thebibliography}
 
 %% Uncomment the following if you have any appendix
-% \appendix
-% \addtocontents{toc}{%
-%  \protect\vspace{1em}% 
-%  \protect\noindent \bfseries \appendixtocname\protect\par
-%  \protect\vspace{-.5em}%
-% }
-% \renewcommand{\chaptername}{\appendixname}
+\appendix
+\addtocontents{toc}{%
+\protect\vspace{1em}% 
+\protect\noindent \bfseries \appendixtocname\protect\par
+  \protect\vspace{-.5em}%
+ }
+ \renewcommand{\chaptername}{\appendixname}
 %% include below possible appendices (chapters)
-
+\include{appendix_dagenssystem}
+\include{appendix_workshop}
 
 \end{document} 
