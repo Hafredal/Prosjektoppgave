@@ -6,11 +6,11 @@
 \usepackage{parskip}
 
 \usepackage{tikz}
-\usepackage{adjustbox}
+%\usepackage{adjustbox}
 \usetikzlibrary{shapes,snakes}
 \usepackage{amsmath,amssymb}
 \usepackage{sidecap}
-%\usepackage{appendix}
+\usepackage{url}
 
 
 
@@ -81,19 +81,20 @@ Hospitals} % The title of your assignement; NB use \newlinetitle to start a newl
 %% include if relevant
 %\listofalgorithms
 %\addcontentsline{toc}{chapter}{List of Algorithms}
-\cleardoublepage
+%\cleardoublepage
 
 %% include if relevant
 %\printglossary[title=List of Symbols, style=long]
-\cleardoublepage
+%\cleardoublepage
 %\glsaddall[]
 
 %% include if relevant
 %\printglossary[title=List of Acronyms,type=\acronymtype] % prints just the list of acronyms
-\cleardoublepage
+%\cleardoublepage
 
 \pagenumbering{arabic}
 \pagestyle{ruled}
+\include{introduksjon}
 \include{bakgrunn}
 \include{teori}
 \include{kognisjon}
@@ -108,7 +109,7 @@ Hospitals} % The title of your assignement; NB use \newlinetitle to start a newl
 \include{workarounds}
 \include{motstand}
 \include{medvirkning}
-\include{suksess_sykehus}
+%\include{suksess_sykehus}
 \include{forskningsmetode}
 \include{hensikt}
 \include{prosess}
@@ -126,6 +127,18 @@ Hospitals} % The title of your assignement; NB use \newlinetitle to start a newl
 %\bibliography{main}
 
 \begin{thebibliography}{99}
+
+\bibitem{stolavs}
+Internettside : \emph{\url{http://www.stolav.no/no/Om-oss/83713/}}
+Last visited 6th of November 2013
+
+\bibitem{styring13}
+Internettside : \emph{\url{https://ekstranett.helse-midt.no/1001/Foretaksmter/Styringsdokument\%202013\%20St\%20\%20Olavs\%20Hospital\%20HF.pdf}}
+
+\bibitem{Klemets12}
+Klemets, J., Kristiansen, L., 2012
+\emph{A Pervasive System for Communication Urgency Cues to Health Care Workers}
+24th International Conference of the European Federation for Medical Informatics Quality of Life through Quality of information - J. Mantas et al. (Eds.), MIE2012
 
 \bibitem{Klemets13}
 Klemets, J. and Kristiansen, L., 2013
