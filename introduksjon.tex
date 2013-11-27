@@ -1,21 +1,27 @@
 \chapter{Introduksjon}
 \label{chp: introduksjon}
 
-Denne oppgaven omhandler systemet for pasientsignal ved St.Olavs Hospital, universitetssykehuset i Trondheim. St. Olavs Hospital er universitetssykehus for Midt-Norge for 697 000 innbyggere pr 1. januar 2013, og lokalsykehus for befolkningen i fylket med vel 300 000 innbyggere. I 2012 hadde sykehuset 131 547 innlagte psienter og gjennomførte 554 083 polikliniske konsultasjoner. \cite{stolavs} Sykehuset har som mål i 2013 å legge til rette for innovasjon og å øke "[...] implementering av nye produkter, [...] løsninger som bidrar til økt kvalitet, effektivitet, [...]"\ \cite{styring13}.
-
-\section{Bakgrunn for problemstilling}
-Dagens sykehus bruker informasjonssystemer i stor grad for støtte i det daglige arbeidet. Det er en økende trend i å utstyre sykepleiere med trådløse enheter, for å øke deres tilgjengelighet og \emph{awareness} ovenfor pasientene og hverandre. Samtidig gjør dette dem mer utsatt for teknologi-baserte forstyrrelser og avbrudd i et allerede abruddsdrevet miljø \cite{Klemets12}. Denne balansen mellom awareness og avbrudd er hårfin, og på ingen måte svart/hvitt. Sykepleierenes awareness er nødvendig for koordinering av arbeid, men kun til en viss grad. Samtidig kan avbrudd være svært forsyrrende og avbryte livsviktig arbeid, men også bidra til nødvendig awareness. 
+Denne oppgaven omhandler systemet for pasientsignal ved St.Olavs Hospital, universitetssykehuset i Trondheim. St. Olavs Hospital er universitetssykehus i Midt-Norge for 697 000 innbyggere pr 1. januar 2013, og lokalsykehus for befolkningen i fylket med vel 300 000 innbyggere. I 2012 hadde sykehuset 131 547 innlagte psienter og gjennomførte 554 083 polikliniske konsultasjoner \cite{stolavs}. Sykehuset har som mål i 2013 å legge til rette for innovasjon og å øke "[...] implementering av nye produkter, [...] løsninger som bidrar til økt kvalitet, effektivitet, [...]"\ \cite{styring13}.
 
 \noindent
-Et eksempel på et slikt overnevnt informasjonsystem er det som gir pasientene mulighet til å gi beskjed om at de trenger hjelp, ved å trekke i snoren ved sengen. Denne muligheten har eksistert lenge, men systemet for vasling av sykepleierene er stadig under utvikling. I denne oppgaven har vi sett på dette systemet ved St.Olavs Hospital i Trondheim, og spørsmålene vi har forsøkt å svare på er som følger:
+Sykehuset bruker i dag et trådløst system for vasling av sykepleiere når pasientene trenger hjelp. Pasientene kan blandt annet tilkalle sykepleier ved å trekke i snoren ved sengen. Sykeplieren med hovedansvar for pasienten vil da bli oppringt på sin trådløse enhet. Dersom sykepleieren ikke har mulighet til å svare vil neste sykepleier bli oppringt. Denne løsningen gjør sykepleierene utsatt for teknologi-baserte forstyrrelser og avbrudd i et allerede abruddsdrevet miljø \cite{Klemets12}. Slike avbrudd i arbeidet kan være både positive og negative. Avbruddene kan for eksempel gi informasjon som øker den enkeltes eller gruppens \emph{awareness}. Dette er informasjon som er nødvendig for koordinert og effektivt arbeid og som grunnlag for avgjørelser. Slik systemet er i dag kreves det i stor grad avbrudd for å formidle denne informasjonen. I noen situasjoner er disse avbruddene svært forstyrrende. Menneskehjernen kun har begrenset kognitiv kapasitet, og dersom denne blir overbelastet kan det hemme vedkomnes oppmerksomhet, noe som igjen kan før til livstruende situasjoner. 
+
+\noindent
+Dette systemet er et såkalt CSCW(Computer-Supported Cooperative Work)-system, et databasert system for å støtte opp under samarbeid. Slike systemer er ofte rigide og strømlinjeformet, og ved bruk av et slikt system mister man mange aspekter ved kommunikasjon som man har når man står ansikt-til-ansikt. Dette gjør det vanskelig å sikre at slike systemer blir susessfulle, og ikke legger begrensinger på den tilsyenlatende rotete måten sykepleierene jobber på. Ved implementering av ny funktionalitet som skal kommunisere informasjon sykepleiere mellom eller automatiere tidligere manuelle oppgaver er dette svært viktig. 
+
+\noindent
+Gjennom arbeidet med denne oppgaven har vi sett på om, og hvordan det er mulig å øke sykepleirenes awareness om hverandres tilgjengleighet og om dette kan redusere eventuelle negative effekter ved inkomne pasientsignal. Dette er oppsummert i to forskningsspørsmål:
 
 \begin{enumerate}
   \item Identifisere behov knyttet til funksjonalitet for støtte av distribusjon av awareness-informasjon.
   \item Hvordan kan systemet endres for å begrense potensielle negative effekter ved avbrytelser?
 \end{enumerate}
 
-\section{Avgrensning og disposisjon}
+\noindent
+Disse to spørsmålene har vi forsøkt å finne svar på gjennom kvalitative litteraturstudier og workshops med utspillig av scenarioer, både med bruk av dagens system og med testing av lavnivå-prototype. Prototyper er et effektivt virkemiddel under workshops for å trigge diskusjon om fremtidige muligheter. 
+
+\subsubsection{Avgrensning og disposisjon}
 Denne oppgaven er avgrenset til å omhandle pasientsignal, og hvordan sykepleierene vasles om dette. Vi har ikke tatt for oss verken underliggende tekniske arkitekturer eller økonomiske aspekter ved dette. Vårt fokus er hvordan vaslingen av sykepleierene, og informasjonen de har tilgjengelig kan endres og utnyttes på en slik måte at de opprettholder tilstrekkelig awareness samtidig som vaslingene gir minst mulig negative avbrudd.
 
 \noindent
-Resten av denne oppgaven er strukturert som følger: Først, i kapittel \ref{chp:bakgrunn} beskrives bakgrunnen for oppgaven. I kapittel \ref{chp:teori} blir relevant teori presentert, med fokus på avbrudd og awareness. Kapittel \ref{chp:forskningsmetode} presenterer hensikten med oppgaven, og metoder, strategier og prosesser vi har brukt. Videre blir resultater fra gjennomførte workshops og en evaluering av disse presentert i [KAPITTEL], før vi oppsumerer oppgaven og kommer med en konklusjon i kapittel [KAPITTEL]. I appendiksene til denne oppgaven er en beskrivelse av dagens pasientsignalsystem (Appendiks \ref{appendix_dagenssystem}), og beskrivelsen av gjennomføringen av workshops (Appendiks \ref{appendix_workshop}).
+Resten av oppgaven er strukturert som følger: Først, i kapittel \ref{chp:teori} blir relevant teori presentert, med fokus på kognitiv kapasitet, awareness og avbrudd. Kapittel \ref{chp:forskningsmetode} presenterer hensikten med oppgaven, samt metoder, strategier og prosesser vi har benyttet i vårt arbeid. Videre blir resultater fra litteraturstudier og gjennomførte workshops presentert i kapittel \ref{chp:resultater} og diskutert i kapittel \ref{chp:diskusjon} før vi oppsumerer oppgaven og kommer med en konklusjon i kapittel \ref{chp:konklusjon}. I appendiksene til denne oppgaven er en beskrivelse av dagens pasientsignalsystem (Appendiks \ref{appendix_dagenssystem}), og beskrivelsen av gjennomføringen av workshops (Appendiks \ref{appendix_workshop}).
