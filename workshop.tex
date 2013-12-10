@@ -1,7 +1,8 @@
 \section{Workshopene}
 \label{ws}
 
-I denne delen vil vi legge frem funn vi gjorde i løpet av de to worshopene som ble holdt. Workshopene ble filmet, noe som har gitt oss muligheten til å gå tilbake å se på det utolkede materialet. Vi ønsket å finne ut av hvordan dagens system fungerer, hva som er positivt og hvilke utfordringer studentene opplever. Vi fant at det er behov for endringer av systemet, både med tanke på hvilken informasjon som formidles ved utløst signal, og hvordan dette formidles.
+I denne delen vil vi legge frem funn vi gjorde i løpet av de to worshopene som ble holdt. Workshopene ble filmet, noe som har gitt oss muligheten til å gå tilbake å se på det utolkede materialet. Vi ønsket å finne ut av hvordan dagens system fungerer, hva som er positivt og hvilke utfordringer studentene opplever. Vi fant at det er behov for endringer av systemet, både med tanke på hvilken informasjon som formidles ved utløst signal, og hvordan dette formidles. Under gjennomgangen av prototypens funksjonalitet uttrykte flere av studentene at de syntes valgene vi hadde gjort var gode. Likevel fikk vi mange gode innspill, og studentene diskuterte potensielle utfordringer og kom med forslag til annen funksjonalitet. 
+
 
 \subsection{Oversikt}
 Det var ønskelig å avklare i hvilken grad sykepleierene har oversikt over inneliggende pasienter på sitt sengetun, og over kollegers ansvar og aktiviteter.
@@ -15,10 +16,19 @@ S1-A1 poengterer at selv om sykepleierene har oversikt over kollegers ansvar kan
 \noindent
 Når det kom til hvorvidt det var vanlig å si ifra til kolleger når man gå noe annet sted, for eksempel inn til en pasient, til et annet tun, avdeling eller etasje, eller til lunch viste det seg at dette var svært variabelt. Noen ville sagt ifra om de gikk inne til en pasient og ble borte en stund, samtidig som andre ikke ville gjort det da de regnet med at kolleger vet hva som skal gjøres på det gitte rommet og at det kan ta lengre tid.
 
+\noindent
 Dette var også tydelig under utspillingen av scenarioene uten prototype, hvor kun én av fire varslet sykepleieren tilstede på tunet om at hun skulle inn på et pasientrom. På spørsmål om man ville varslet andre før man går inn på et rom med en urolig pasient (noe som kan ta lengre tid) svarte S5-A3: \emph{"ja, man ville jo egentlig sagt det, men det er jo sjelden det blir sagt da, for de andre er jo gjerne klare over hva som skjer."}. Dette vitner om at sykepleierene regner med at alle har oversikt, både over hvilke pasienter som ligger på hvilke rom og hvem som har ansvar for de foskjellige pasientene.
- 
 
-\subsection{Håndtering av innkommende pasientsignal}
+
+\noindent
+Etter introduksjon av prototypen, og muligheten til å sette sin status til  utilgjengelig for å formidle nettopp dette til kolleger så vi at dette var en funksjon som ble brukt i større grad enn å gi muntlig beskjed.
+S1-A1 og S6-A4, som begge skulle utføre sårskift, benyttet seg av muligheten til å sette seg som utilgjengelig før de gikk inn til pasienten. S6-A4 valgte i tillegg å si ifra til sykepleieren på tunet om at hun ville være opptatt en stund. Da S2-A2, som skulle inn til en urolig pasient, ble spurt om hun ville sagt ifra til noen før hun gikk inn, svarte hun at: \emph{"hvis appen skal funke, burde man vel ikke trenge det."}, som vitner om rask adopsjon av funksjonen.
+
+\noindent
+For å forhindre at man blir stående som utilgjengelig når man ikke er det, noe som ville virke mot hensiktem med å gi sykepleierene bedre oversikt over kolleger, ble det foreslått forskjellige løsninger. (1) At systemet automatisk endrer status til tilgjengelig når man forlater rommet, (2) at telefonen gir en påminnelse om at man fremdeles står som utilgjengelig etter en viss tid, (3) at man har en tidsbegrensing på hvor lenge man kan stå som utilgjengelig.
+
+
+\subsubsection{Håndtering av innkommende pasientsignal}
 Under workshopene kom det også frem at sykepleierene tar hensyn til flere faktorer når de vurderer og håndterer innkommende pasientsignaler. 
 
 
@@ -32,3 +42,21 @@ Dersom sykepeieren befant seg sammen med en annen pasient når signalet ble utl�
 
 \noindent
 For å bedre kunne gjøre prioriteringer angående hvordan et pasientsignal skal behendles av den enkelte sykepleier var det stor oppslutting om forslaget å få et oversiktbilde av rommet hvor alarmen er utløst på telefonen slik at man kunne se pasienten, hvor i rommet denne befinner seg og hvordan det ser ut tul at vedkomne har det. Dette forslaget kom etter at vår prototype var introdusert som smarttelefon. Deltagerene kom også med forslag om å oppgi hvor i romemt signalet er utløst (ved sengen, ved døren, på toalettet osv.).
+
+\subsection{Varsling fra telefon og veggpanel}
+
+Det var også interessant å finne ut hvordan det innkommende pasientsignalet påvirker sykepleierenes arbeid. Det kom frem at de blir påvirket på svært forskjellige måter, noe som også kom tydelig frem under utspilling av scenarioene.
+Der noen ble stresset ble andre ikke plaget overhodet. S4-A3 tenkte mest på hvordan det påvirket pasienten hun var hos, mens S9-A3 savnet å få en bekreftelse på at noen faktisk hadde gått inn til pasienten som utløste signalet slik at hun kunne slutte å tenke på det. 
+
+\noindent
+Det ble i flere anledninger de to dagene påpekt at det i visse situasjoner ville være positivt om telefonen ikke ringte like høyt, eventuelt kun vibrerte.
+Dette var i stor grad av hensyn til pasientene. Flere av studentene opplevde at mange pasienter enten blir skremt av at det ringer, eller føler seg til bry og at de må forte seg å snakke ferdig. 
+S2-A2 mente det er feil at pasientene må vise forståelse og godta at andre signaler skal forstyrre dem. Hun mente det er viktig at sykepleierene tar ansvar for at slike situasjoner blir håndtert på en god måte slik at pasientene ikke føler at de er til bry.
+Dette ble begge dagene nevnt før prototypen med denne muligheten ble introdusert, men der var etter dette det var mest diskusjon rundt temaet. 
+Det ble også foreslått at den ikke skulle gi fra seg noen form for vasling, men deltagerene kom da fort frem til at dette var lite hensikstmessig da de ønsket å ha en viss oversikt over hva som skjedde, eller «være med i loopen».
+
+\noindent
+I forbindelse med diskusjonen om hvordan man skal varsles når man har satt status til utilgjengelig kom det forslag om å flytte veggpanelet fra døren til veggen over sengen til pasienten. Dette gjalt speselt dersom det skulle vasles med svak eller ingen lyd, slik at man likevel ikke skal gå glipp av inkomne pasientsignaler.
+
+\noindent
+Også hvordan sykepleierenes status vil påvirke hvem som mottar pasientsignaler ble diskutert etter introduksjon av prototypen, og det kom flere forslag til hvordan dette kunne løses. Blant annet ble det foreslått at pasientsignaler først blir sendt til de som er tilgjengelige, deretter de som er opptatte, og eventuelt til slutt til de som er utilgjengelige. S2-A2 foreslo at de som er opptatt eller utilgjengelig først burde varsles med kun vibrasjon. Dersom signalet ble sendt til alle sykepleierene uten at det ble godtatt, burde derimot alle varsles med lyd.
