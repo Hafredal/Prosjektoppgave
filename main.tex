@@ -46,17 +46,17 @@
 % \cleardoublepage
 
 %% There must be an abstract in English, even though the main text is in Norwegian
-\selectlanguage{norsk}
-%\include{abstract_english}
+\selectlanguage{english}
+\include{abstract_english}
 \cleardoublepage
 
 %% Only for the master's thesis; if the main text is in English and you can write Norwegian, there must be an abstract in Norwegian as well.A
-% \selectlanguage{norsk}
+\selectlanguage{norsk}
 \include{abstract_norwegian}
-% \cleardoublepage
+\cleardoublepage
 
-\selectlanguage{english}% Change to 'norsk' if you are writing in Norwegian
-\include{abstract_english}
+%\selectlanguage{english}% Change to 'norsk' if you are writing in Norwegian
+%\include{abstract_english}
 
 
 \include{preface}
@@ -95,8 +95,8 @@
 \include{Introduksjon}
 \include{teori}
 \include{kognisjon}
-\include{awareness}
 \include{avbrudd}
+\include{awareness}
 \begingroup
 \let\clearpage\relax
 \include{suksesskriterier}
@@ -116,8 +116,8 @@
 \include{resultater}
 \include{prototypen}
 \include{workshop}
-\include{analyse}
 \include{diskusjon}
+\include{analyse}
 \include{konklusjon}
 
 %% include here the other chapters
